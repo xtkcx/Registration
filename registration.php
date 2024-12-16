@@ -11,37 +11,37 @@
     <form method="XXX" action="XXX">
         <div>
             <label>名前（姓）</label>
-            <input type="text" class="text" size="10" name="XXX">
+            <input type="text" class="text" size="10" name="XXX" maxlength="10">
         </div>
         <div>
             <label>名前（名）</label>
-            <input type="text" class="text" size="10" name="XXX">
+            <input type="text" class="text" size="10" name="XXX" maxlength="10">
         </div>
         <div>
             <label>カナ（姓）</label>
-            <input type="text" class="text" size="10" name="XXX">
+            <input type="text" class="text" size="10" name="XXX" maxlength="10">
         </div>
         <div>
             <label>カナ（名）</label>
-            <input type="text" class="text" size="10" name="XXX">
+            <input type="text" class="text" size="10" name="XXX" maxlength="10">
         </div>
         <div>
             <label>メールアドレス</label>
-            <input type="text" class="text" size="100" name="XXX">
+            <input type="text" class="text" size="10" name="XXX" maxlength="100">
         </div>
         <div>
             <label>パスワード</label>
-            <input type="text" class="text" size="10" name="XXX">
+            <input type="text" class="text" size="10" name="XXX" maxlength="10">
         </div>
         <div>
             <label>性別</label>
-            <label><input type="radio" name=“XXX" value=“XXX"　checked>男</label>
+            <label><input type="radio" name=“XXX" value=“XXX" checked>男</label>
             <label><input type="radio" name=“XXX" value=“XXX">女</label>
         </div>
 
         <div>
             <label>郵便番号</label>
-            <input type="text" class="text" size="7" name="XXX">
+            <input type="text" class="text" size="10" name="XXX" maxlength="7">
         </div>
 
         <div>
@@ -99,12 +99,12 @@
         </div>
         <div>
             <label>住所（市区町村）</label>
-            <input type="text" class="text" size="10" name="XXX">
+            <input type="text" class="text" size="10" name="XXX" maxlength="10">
         </div>
 
         <div>
             <label>住所（番地）</label>
-            <input type="text" class="text" size="100" name="XXX">
+            <input type="text" class="text" size="10" name="XXX" maxlength="100">
         </div>
         <div>
             <label>アカウント権限</label>
