@@ -11,37 +11,37 @@
     <form method="XXX" action="XXX">
         <div>
             <label>名前（姓）</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="10">
+            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=^[ぁ-ん]+$ , [\u3041-\u309F]*>
         </div>
         <div>
             <label>名前（名）</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="10">
+            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=^[ぁ-ん]+$ , [\u3041-\u309F]*>
         </div>
         <div>
             <label>カナ（姓）</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="10">
+            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=^[ァ-ンヴー]+$ , [\u30A1-\u30FF]*>
         </div>
         <div>
             <label>カナ（名）</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="10">
+            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=^[ァ-ンヴー]+$ , [\u30A1-\u30FF]*>>
         </div>
         <div>
             <label>メールアドレス</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="100">
+            <input type="text" class="text" size="10" name="XXX" maxlength="100" pattern=[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$>
         </div>
         <div>
             <label>パスワード</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="10">
+            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[^\x20-\x7E]*>
         </div>
         <div>
             <label>性別</label>
-            <label><input type="radio" name=“XXX" value=“XXX" checked>男</label>
-            <label><input type="radio" name=“XXX" value=“XXX">女</label>
+            <label><input type="radio" name="XXX" value="XXX" checked>男</label>
+            <label><input type="radio" name="XXX" value="XXX">女</label>
         </div>
 
         <div>
             <label>郵便番号</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="7">
+            <input type="text" class="text" size="10" name="XXX" maxlength="7" pattern=^[0-9]+$>
         </div>
 
         <div>
@@ -99,12 +99,12 @@
         </div>
         <div>
             <label>住所（市区町村）</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="10">
+            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[^\x20-\x7E]*>
         </div>
 
         <div>
             <label>住所（番地）</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="100">
+            <input type="text" class="text" size="10" name="XXX" maxlength="100" pattern=[^\x20-\x7E]*>
         </div>
         <div>
             <label>アカウント権限</label>
