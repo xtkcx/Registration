@@ -17,6 +17,9 @@
       <li>登録フォーム</li>
       <li>問い合わせ</li>
       <li>その他</li>
+      <li>
+        <a href="registration.php">アカウント登録</a>
+        </li>
     </ul>
     </header>
   
