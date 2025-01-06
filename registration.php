@@ -11,19 +11,19 @@
     <form method="XXX" action="XXX">
         <div>
             <label>名前（姓）</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=^[ぁ-ん]+$ , [\u3041-\u309F]*>
+            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[\u3041-\u3096]|[\u3400-\u9FFF]>
         </div>
         <div>
             <label>名前（名）</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=^[ぁ-ん]+$ , [\u3041-\u309F]*>
+            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[\u3041-\u3096]|[\u3400-\u9FFF]>
         </div>
         <div>
             <label>カナ（姓）</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=^[ァ-ンヴー]+$ , [\u30A1-\u30FF]*>
+            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[\u30A1-\u30FA]>
         </div>
         <div>
             <label>カナ（名）</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=^[ァ-ンヴー]+$ , [\u30A1-\u30FF]*>>
+            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[\u30A1-\u30FA]>
         </div>
         <div>
             <label>メールアドレス</label>
@@ -41,7 +41,7 @@
 
         <div>
             <label>郵便番号</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="7" pattern=^[0-9]+$>
+            <input type="text" class="text" size="10" name="XXX" maxlength="7" pattern=[0-9]+$>
         </div>
 
         <div>
