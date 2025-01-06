@@ -11,27 +11,27 @@
     <form method="XXX" action="XXX">
         <div>
             <label>名前（姓）</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[\u3041-\u3096]|[\u3400-\u9FFF]>
+            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[\u3041-\u3096]|[\u3400-\u9FFF] title="名前（姓）が未入力です。">
         </div>
         <div>
             <label>名前（名）</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[\u3041-\u3096]|[\u3400-\u9FFF]>
+            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[\u3041-\u3096]|[\u3400-\u9FFF]　title="名前（名）が未入力です。">
         </div>
         <div>
             <label>カナ（姓）</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[\u30A1-\u30FA]>
+            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[\u30A1-\u30FA]　title="カナ（姓）が未入力です。">
         </div>
         <div>
             <label>カナ（名）</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[\u30A1-\u30FA]>
+            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[\u30A1-\u30FA]　title="カナ（名）が未入力です。">
         </div>
         <div>
             <label>メールアドレス</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="100" pattern=[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$>
+            <input type="text" class="text" size="10" name="XXX" maxlength="100" pattern=[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$　title="メールアドレスが未入力です。">
         </div>
         <div>
             <label>パスワード</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[^\x20-\x7E]*>
+            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[^\x20-\x7E]*　title="パスワードが未入力です。">
         </div>
         <div>
             <label>性別</label>
@@ -41,11 +41,12 @@
 
         <div>
             <label>郵便番号</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="7" pattern=[0-9]+$>
+            <input type="text" class="text" size="10" name="XXX" maxlength="7" pattern=[0-9]+$　title="郵便番号が未入力です。">
         </div>
 
         <div>
             <label>住所（都道府県）</label>
+            <input title="住所（都道府県）が未選択です。">
             <select name="todohuken">
                 <option value=""></option>
                 <option value="北海道">北海道</option>
@@ -99,12 +100,12 @@
         </div>
         <div>
             <label>住所（市区町村）</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[^\x20-\x7E]*>
+            <input type="text" class="text" size="10" name="XXX" maxlength="10" pattern=[^\x20-\x7E]*　title="住所（市区町村）が未入力です。">
         </div>
 
         <div>
             <label>住所（番地）</label>
-            <input type="text" class="text" size="10" name="XXX" maxlength="100" pattern=[^\x20-\x7E]*>
+            <input type="text" class="text" size="10" name="XXX" maxlength="100" pattern=[^\x20-\x7E]*　title="住所（番地）が未入力です。">
         </div>
         <div>
             <label>アカウント権限</label>
