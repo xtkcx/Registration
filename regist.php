@@ -11,40 +11,42 @@
     <form method="XXX" action="XXX">
         <div>
             <label>名前（姓）</label>
-            <input type="text" class="text" size="10" name="XXX" ></div>
+            <input type="text" class="text" size="10" name="XXX" maxlength="10">
+        </div>
         <div>
             <label>名前（名）</label>
-            <input type="text" class="text" size="10" name="XXX" >
+            <input type="text" class="text" size="10" name="XXX" maxlength="10">
         </div>
         <div>
             <label>カナ（姓）</label>
-            <input type="text" class="text" size="10" name="XXX" >
+            <input type="text" class="text" size="10" name="XXX" maxlength="10">
         </div>
         <div>
             <label>カナ（名）</label>
-            <input type="text" class="text" size="10" name="XXX" >
+            <input type="text" class="text" size="10" name="XXX" maxlength="10">
         </div>
         <div>
             <label>メールアドレス</label>
-            <input type="text" class="text" size="10" name="XXX" >
+            <input type="text" class="text" size="10" name="XXX" maxlength="100">
         </div>
         <div>
             <label>パスワード</label>
-            <input type="text" class="text" size="10" name="XXX" >
+            <input type="text" class="text" size="10" name="XXX" maxlength="10">
         </div>
         <div>
             <label>性別</label>
-            
+            <label><input type="radio" name="XXX" value="XXX" checked>男</label>
+            <label><input type="radio" name="XXX" value="XXX">女</label>
         </div>
 
         <div>
             <label>郵便番号</label>
-            <input type="text" class="text" size="10" name="XXX" >
+            <input type="text" class="text" size="10" name="XXX" maxlength="7">
         </div>
 
         <div>
             <label>住所（都道府県）</label>
-            <select name="todohuken" >
+            <select name="todohuken">
                 <option value=""></option>
                 <option value="北海道">北海道</option>
                 <option value="青森県">青森県</option>
@@ -97,17 +99,17 @@
         </div>
         <div>
             <label>住所（市区町村）</label>
-            <input type="text" class="text" size="10" name="XXX" >
+            <input type="text" class="text" size="10" name="XXX" maxlength="10">
         </div>
 
         <div>
             <label>住所（番地）</label>
-            <input type="text" class="text" size="10" name="XXX" >
+            <input type="text" class="text" size="10" name="XXX" maxlength="100">
         </div>
         <div>
             <label>アカウント権限</label>
             <select name="yakusyoku">
                 <option value="一般">一般</option>
                 <option value="管理者">管理者</option>
-                </select>
+            </select>
         </div>
