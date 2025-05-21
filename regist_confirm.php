@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>アカウント登録確認画面
+    <title>アカウント登録確認画面</title>
         <link rel="stylesheet" type="text/css" href="regist_confirm.css">
 </head>
 
@@ -27,7 +27,7 @@
             <input type="submit" class="button1" value="前に戻る">
         </form>
         <form action="regist_complete.php" method="post">
-            <input type=“submit” class=“button2" value="登録する">
+            <input type="submit" class="button2" value="登録する">
             <input type="hidden" value="<?php echo $_POST['family_name']; ?>" name="family_name">
             <input type="hidden" value="<?php echo $_POST['last_name']; ?> " name="last_name">
             <input type="hidden" value="<?php echo $_POST['family_name_kana']; ?> " name="family_name_kana">
