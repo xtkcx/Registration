@@ -16,27 +16,27 @@
     <form method="post" action="regist_confirm.php">
         <div>
             <label>名前（姓）</label>
-            <input type="text" class="text" size="10" name="family_name" maxlength="10" pattern=[\u3041-\u3096]|[\u3400-\u9FFF] title="名前（姓）が未入力です。">
+            <input type="text" class="text" size="10" name="family_name" maxlength="10" pattern="[\u3041-\u3096]|[\u3400-\u9FFF]" title="名前（姓）が未入力です。">
         </div>
         <div>
             <label>名前（名）</label>
-            <input type="text" class="text" size="10" name="last_name" maxlength="10" pattern=[\u3041-\u3096]|[\u3400-\u9FFF]　title="名前（名）が未入力です。">
+            <input type="text" class="text" size="10" name="last_name" maxlength="10" pattern="[\u3041-\u3096]|[\u3400-\u9FFF]" title="名前（名）が未入力です。">
         </div>
         <div>
             <label>カナ（姓）</label>
-            <input type="text" class="text" size="10" name="family_name_kana" maxlength="10" pattern=[\u30A1-\u30FA]　title="カナ（姓）が未入力です。">
+            <input type="text" class="text" size="10" name="family_name_kana" maxlength="10" pattern="[\u30A1-\u30F6]*" title="カナ（姓）が未入力です。">
         </div>
         <div>
             <label>カナ（名）</label>
-            <input type="text" class="text" size="10" name="last_name_kana" maxlength="10" pattern=[\u30A1-\u30FA]　title="カナ（名）が未入力です。">
+            <input type="text" class="text" size="10" name="last_name_kana" maxlength="10" pattern="[\u30A1-\u30F6]*" title="カナ（名）が未入力です。">
         </div>
         <div>
             <label>メールアドレス</label>
-            <input type="text" class="text" size="10" name="mail" maxlength="100" pattern=[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$　title="メールアドレスが未入力です。">
+            <input type="text" class="text" size="10" name="mail" maxlength="100" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="メールアドレスが未入力です。">
         </div>
         <div>
             <label>パスワード</label>
-            <input type="text" class="text" size="10" name="password" maxlength="10" pattern=[^\x20-\x7E]*　title="パスワードが未入力です。">
+            <input type="text" class="text" size="10" name="password" maxlength="10" pattern=^[0-9A-Za-z]+$ title="パスワードが未入力です。">
         </div>
         <div>
             <label>性別</label>
@@ -46,7 +46,7 @@
 
         <div>
             <label>郵便番号</label>
-            <input type="text" class="text" size="10" name="postal_code" maxlength="7" pattern=[0-9]+$　title="郵便番号が未入力です。">
+            <input type="text" class="text" size="10" name="postal_code" maxlength="7" pattern=[0-9]+$ title="郵便番号が未入力です。">
         </div>
 
         <div>
@@ -113,11 +113,12 @@
         </div>
         <div>
             <label>アカウント権限</label>
-            <select name="yauthority">
+            <select name="authority">
                 <option value="一般">一般</option>
                 <option value="管理者">管理者</option>
             </select>
         </div>
+        
         <div>
             <button type="submit">確認する</button>
         </div>
