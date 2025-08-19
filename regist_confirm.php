@@ -24,10 +24,24 @@
         <p>アカウント権限<?php echo $_POST['authority'] === "0" ? "一般" : "管理者"; ?></p>
 
         <form action="regist.php">
-            <input type="submit" class="button1" value="前に戻る">
+            <form action="regist.php" method="post">
+                <input type="hidden" name="family_name" value="<?php echo $_POST['family_name']; ?>">
+                <input type="hidden" name="last_name" value="<?php echo $_POST['last_name']; ?>">
+                <input type="hidden" name="family_name_kana" value="<?php echo $_POST['family_name_kana']; ?>">
+                <input type="hidden" name="last_name_kana" value="<?php echo $_POST['last_name_kana']; ?>">
+                <input type="hidden" name="mail" value="<?php echo $_POST['mail']; ?>">
+                <input type="hidden" name="password" value="<?php echo $_POST['password']; ?>">
+                <input type="hidden" name="gender" value="<?php echo $_POST['gender']; ?>">
+                <input type="hidden" name="postal_code" value="<?php echo $_POST['postal_code']; ?>">
+                <input type="hidden" name="prefecture" value="<?php echo $_POST['prefecture']; ?>">
+                <input type="hidden" name="address_1" value="<?php echo $_POST['address_1']; ?>">
+                <input type="hidden" name="address_2" value="<?php echo $_POST['address_2']; ?>">
+                <input type="hidden" name="authority" value="<?php echo $_POST['authority']; ?>">
+
+                <input type="submit" class="button1" value="前に戻る">
+            </form>
         </form>
         <form action="regist_complete.php" method="post">
-            <input type="submit" class="button2" value="登録する">
             <input type="hidden" value="<?php echo $_POST['family_name']; ?>" name="family_name">
             <input type="hidden" value="<?php echo $_POST['last_name']; ?>" name="last_name">
             <input type="hidden" value="<?php echo $_POST['family_name_kana']; ?>" name="family_name_kana">
@@ -40,6 +54,8 @@
             <input type="hidden" value="<?php echo $_POST['address_1']; ?>" name="address_1">
             <input type="hidden" value="<?php echo $_POST['address_2']; ?>" name="address_2">
             <input type="hidden" value="<?php echo $_POST['authority']; ?>" name="authority">
+
+            <input type="submit" class="button2" value="登録する">
         </form>
     </div>
 </body>
