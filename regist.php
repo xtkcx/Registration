@@ -25,48 +25,36 @@ $form = $_SESSION['form'] ?? [];
         <div>
             <label>名前（姓）</label>
             <input type="text" class="text" size="10" name="family_name" maxlength="10"
-                   required pattern="^[\u3041-\u3096\u3400-\u9FFF]+$"
-                   title="名前（姓）が未入力です。"
                    value="<?= $form['family_name'] ?? '' ?>">
         </div>
 
         <div>
             <label>名前（名）</label>
             <input type="text" class="text" size="10" name="last_name" maxlength="10"
-                   required pattern="^[\u3041-\u3096\u3400-\u9FFF]+$"
-                   title="名前（名）が未入力です。"
                    value="<?= $form['last_name'] ?? '' ?>">
         </div>
 
         <div>
             <label>カナ（姓）</label>
             <input type="text" class="text" size="10" name="family_name_kana" maxlength="10"
-                   required pattern="^[\u30A1-\u30F6]+$"
-                   title="カナ（姓）が未入力です。"
                    value="<?= $form['family_name_kana'] ?? '' ?>">
         </div>
 
         <div>
             <label>カナ（名）</label>
             <input type="text" class="text" size="10" name="last_name_kana" maxlength="10"
-                   required pattern="^[\u30A1-\u30F6]+$"
-                   title="カナ（名）が未入力です。"
                    value="<?= $form['last_name_kana'] ?? '' ?>">
         </div>
 
         <div>
             <label>メールアドレス</label>
-            <input type="text" class="text" size="30" name="mail" maxlength="100"
-                   required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                   title="メールアドレスが未入力です。"
+            <input type="text" class="text" size="10" name="mail" maxlength="100"
                    value="<?= $form['mail'] ?? '' ?>">
         </div>
 
         <div>
             <label>パスワード</label>
-            <input type="text" class="text" size="10" name="password" maxlength="10"
-                   required pattern="^[0-9A-Za-z]+$"
-                   title="パスワードが未入力です。"
+            <input type="password" class="text" size="10" name="password" maxlength="10"
                    value="<?= $form['password'] ?? '' ?>">
         </div>
 
@@ -79,14 +67,12 @@ $form = $_SESSION['form'] ?? [];
         <div>
             <label>郵便番号</label>
             <input type="text" class="text" size="10" name="postal_code" maxlength="7"
-                   required pattern="^[0-9]{7}$"
-                   title="郵便番号が未入力です。"
                    value="<?= $form['postal_code'] ?? '' ?>">
         </div>
 
         <div>
             <label>住所（都道府県）</label>
-            <select name="prefecture" required title="住所（都道府県）が未入力です。">
+            <select name="prefecture">
                 <option value=""></option>
                 <?php
                 $prefs = ["北海道","青森県","岩手県","宮城県","秋田県","山形県","福島県",
@@ -106,23 +92,19 @@ $form = $_SESSION['form'] ?? [];
 
         <div>
             <label>住所（市区町村）</label>
-            <input type="text" class="text" size="20" name="address_1" maxlength="50"
-                   required pattern="^[\u3041-\u3096\u30A1-\u30F60-9\u3400-\u9FFF\s\-]+$"
-                   title="住所（市区町村）が未入力です。"
+            <input type="text" class="text" size="10" name="address_1" maxlength="10"
                    value="<?= $form['address_1'] ?? '' ?>">
         </div>
 
         <div>
             <label>住所（番地）</label>
-            <input type="text" class="text" size="30" name="address_2" maxlength="100"
-                   required pattern="^[\u3041-\u3096\u30A1-\u30F60-9\u3400-\u9FFF\s\-]+$"
-                   title="住所（番地）が未入力です。"
+            <input type="text" class="text" size="10" name="address_2" maxlength="100"
                    value="<?= $form['address_2'] ?? '' ?>">
         </div>
 
         <div>
             <label>アカウント権限</label>
-            <select name="authority" required title="アカウント権限が未入力です。">
+            <select name="authority">
                 <option value="0" <?= ($form['authority'] ?? '') === "0" ? "selected" : "" ?>>一般</option>
                 <option value="1" <?= ($form['authority'] ?? '') === "1" ? "selected" : "" ?>>管理者</option>
             </select>
